@@ -1,0 +1,203 @@
+@charset "UTF-8";
+.view {
+  /* 全场优惠部分开始 */
+  /* 全场优惠部分结束 */
+  /* 优惠券部分开始 */
+  /* 优惠券部分结束 */
+  /* 提示部分开始 */
+  /* 提示部分结束 */
+}
+
+.view .header img {
+  width: 100%;
+}
+
+.view .all_coupon_card,
+.view .some_coupon_card {
+  padding: 0 .26rem;
+}
+
+.view .all_coupon_card .card_title,
+.view .some_coupon_card .card_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: .28rem;
+  padding: 0.12rem 0;
+}
+
+.view .all_coupon_card .card,
+.view .some_coupon_card .card {
+  -webkit-box-shadow: 0 0 8px 0 #888;
+          box-shadow: 0 0 8px 0 #888;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #55BB75;
+}
+
+.view .all_coupon_card .card .card_content,
+.view .some_coupon_card .card .card_content {
+  -webkit-box-shadow: 0 0 0 0 #888;
+          box-shadow: 0 0 0 0 #888;
+  padding: 0 .26rem;
+  color: #fff;
+  padding-bottom: .4rem;
+  background: url(../images/sale.png) no-repeat top -0.2rem right -0.06rem;
+  background-size: 1.46rem 1.46rem;
+}
+
+.view .all_coupon_card .card .card_content .title1,
+.view .some_coupon_card .card .card_content .title1 {
+  font-size: 0.46rem;
+  line-height: 1;
+  padding-top: 0.34rem;
+}
+
+.view .all_coupon_card .card .card_content .title2,
+.view .some_coupon_card .card .card_content .title2 {
+  font-size: 0.24rem;
+  color: #BCF2CD;
+  line-height: 1;
+  padding-top: 0.18rem;
+}
+
+.view .all_coupon_card .card .card_content .title3,
+.view .some_coupon_card .card .card_content .title3 {
+  padding-top: 0.6rem;
+  font-size: 0.22rem;
+}
+
+.view .all_coupon_card .card .card_content .title3 a,
+.view .some_coupon_card .card .card_content .title3 a {
+  float: right;
+  background-color: #888;
+  border-radius: 4px;
+  padding: 4px;
+  line-height: 1;
+  color: #fff;
+}
+
+.view .all_coupon_card .card .card_bottom,
+.view .some_coupon_card .card .card_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  padding: .3rem 0;
+}
+
+.view .all_coupon_card .card .card_bottom::before,
+.view .some_coupon_card .card .card_bottom::before {
+  content: "";
+  position: absolute;
+  background: url(../images/icon.png);
+  width: 100%;
+  height: .08rem;
+  top: -4px;
+  left: 0px;
+}
+
+.view .all_coupon_card .card .card_bottom a,
+.view .some_coupon_card .card .card_bottom a {
+  line-height: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  font-size: .26rem;
+}
+
+.view .all_coupon_card .card .card_bottom a span,
+.view .some_coupon_card .card .card_bottom a span {
+  color: #55BB75;
+  vertical-align: middle;
+}
+
+.view .all_coupon_card .card .card_bottom a:nth-of-type(1),
+.view .some_coupon_card .card .card_bottom a:nth-of-type(1) {
+  border-right: 1px solid #888;
+}
+
+.view .some_coupon_card {
+  /* 添加优惠券部分开始 */
+}
+
+.view .some_coupon_card .card {
+  background-color: #A973BB;
+}
+
+.view .some_coupon_card .card .content_top .title1 .sec1 {
+  font-size: 0.4rem;
+}
+
+.view .some_coupon_card .card .content_top .title1 .sec2 {
+  font-size: 0.9rem;
+  font-family: "华文细黑";
+}
+
+.view .some_coupon_card .card .content_top .title1 .sec3 {
+  font-size: 0.24rem;
+  color: #EAC6F7;
+}
+
+.view .some_coupon_card .card .content_top .title2 {
+  padding-top: 55px;
+  color: #fff;
+}
+
+.view .some_coupon_card .card .content_top .title3 {
+  padding-top: 12px;
+}
+
+.view .some_coupon_card .card:nth-child(1) {
+  margin-bottom: 0.3rem;
+}
+
+.view .some_coupon_card .card:nth-child(2) .card_bottom a:nth-child(2) {
+  border-right: 1px solid #888;
+}
+
+.view .some_coupon_card .add_coupon {
+  margin-top: 0.27rem;
+  height: 2.24rem;
+  border: .02rem dashed #dedede;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ADADAD;
+}
+
+.view .some_coupon_card .add_coupon a {
+  display: block;
+}
+
+.view .some_coupon_card .add_coupon a span {
+  font-size: .98rem;
+  color: #ADADAD;
+}
+
+.view .some_coupon_card .add_coupon p {
+  font-size: .26rem;
+  margin-top: .14rem;
+}
+
+.view .alert {
+  margin: 30px 0;
+  color: #999;
+  font-size: 0.24rem;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,156 @@
+.view {
+    // background-color: #ccc;
+    .header {
+        img {
+            width: 100%;
+        }
+    }
+    /* 全场优惠部分开始 */
+    .all_coupon_card,
+    .some_coupon_card {
+        padding: 0 .26rem;
+        .card_title {
+            display: flex;
+            justify-content: space-between;
+            font-size: .28rem;
+            padding: 0.12rem 0;
+        }
+        .card {
+            box-shadow: 0 0 8px 0 #888;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #55BB75;
+            .card_content {
+                box-shadow: 0 0 0 0 #888;
+                padding: 0 .26rem;
+                color: #fff;
+                padding-bottom: .4rem;
+                background: url(../images/sale.png) no-repeat top -.2rem right -.06rem;
+                background-size: 1.46rem 1.46rem;
+                .title1 {
+                    font-size: 0.46rem;
+                    line-height: 1;
+                    padding-top: 0.34rem;
+                }
+                .title2 {
+                    font-size: 0.24rem;
+                    color: #BCF2CD;
+                    line-height: 1;
+                    padding-top: 0.18rem;
+                }
+                .title3 {
+                    padding-top: 0.6rem;
+                    font-size: 0.22rem;
+                    a {
+                        float: right;
+                        background-color: #888;
+                        border-radius: 4px;
+                        padding: 4px;
+                        line-height: 1;
+                        color: #fff;
+                    }
+                }
+            }
+            .card_bottom {
+                display: flex;
+                position: relative;
+                background-color: #fff;
+                padding: .3rem 0;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background: url(../images/icon.png);
+                    width: 100%;
+                    height: .08rem;
+                    top: -4px;
+                    left: 0px;
+                }
+                a {
+                    span {
+                        color: #55BB75;
+                        vertical-align: middle;
+                    }
+                    line-height: 1;
+                    flex:1;
+                    text-align: center;
+                    font-size: .26rem;
+                }
+                a:nth-of-type(1) {
+                    border-right: 1px solid #888;
+                }
+            }
+        }
+    }
+    /* 全场优惠部分结束 */
+    /* 优惠券部分开始 */
+    .some_coupon_card {
+        .card {
+            background-color: #A973BB;
+             
+            .content_top {
+                .title1 {
+                    .sec1 {
+                        font-size: 0.4rem;
+                    }
+                    .sec2 {
+                        font-size: 0.9rem;
+                        font-family: "华文细黑";
+                    }
+                    .sec3 {
+                        font-size: 0.24rem;
+                        color: #EAC6F7;
+                    }
+                }
+                .title2 {
+                    padding-top: 55px;
+                    color: #fff;
+                }
+                .title3 {
+                    padding-top: 12px;
+                }
+            }
+        }
+        .card:nth-child(1) {
+            margin-bottom: 0.3rem;
+        }
+        .card:nth-child(2) {
+            .card_bottom {
+                a:nth-child(2) {
+                    border-right: 1px solid #888;
+                }
+            }
+        }
+
+        /* 添加优惠券部分开始 */
+        .add_coupon {
+            margin-top: 0.27rem;
+            height: 2.24rem;
+            border: .02rem dashed #dedede;
+            display: flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            color: #ADADAD;
+            a {
+                display: block;
+                span {
+                    font-size: .98rem;
+                    color: #ADADAD;
+                }
+            }
+            p {
+                font-size: .26rem;
+                margin-top: .14rem;
+            }
+        }
+    }
+    /* 优惠券部分结束 */
+
+    /* 提示部分开始 */
+    .alert {
+        margin: 30px 0;
+        color: #999;
+        font-size: 0.24rem;
+    }
+    /* 提示部分结束 */
+}
